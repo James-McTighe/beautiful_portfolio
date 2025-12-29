@@ -13,9 +13,68 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       }
     `}>
 
-      <button onClick={() => setMenuOpen(false)} className="absolute top-6 right-6 text-white text-3xl focus:outline-none cursor-pointer">
+      <button
+        onClick={() => setMenuOpen(false)}
+        className="absolute top-6 right-6 text-white text-3xl focus:outline-none cursor-pointer"
+        aria-label="Close Menu"
+      >
         &times;
       </button>
+
+      <a>
+
+        <a href="#home" className='font-mono text-xl font-bold text-white'>
+          {" "}
+          github.com/<span className="text-blue-500">james-mctighe</span>{" "}
+        </a>
+
+        <div
+          className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
+          onClick={() => setMenuOpen((prev) => !prev)}
+        >
+          &#9776;
+        </div>
+
+        <div className="hidden md:flex items-center space-x-8">
+          <a
+            href='#home'
+            className="tex-gray-300 hove:text-white transition-colors"
+          >
+            {" "}
+            Home {" "}
+          </a>
+        </div>
+
+        <div className="hidden md:flex items-center space-x-8">
+          <a
+            href='#about'
+            className="tex-gray-300 hove:text-white transition-colors"
+          >
+            {" "}
+            About {" "}
+          </a>
+        </div>
+
+        <div className="hidden md:flex items-center space-x-8">
+          <a
+            href='#projects'
+            className="tex-gray-300 hove:text-white transition-colors"
+          >
+            {" "}
+            Projects {" "}
+          </a>
+        </div>
+
+        <div className="hidden md:flex items-center space-x-8">
+          <a
+            href='#contact'
+            className="tex-gray-300 hove:text-white transition-colors"
+          >
+            {" "}
+            Contact {" "}
+          </a>
+        </div>
+      </a>
 
     </div>
   );
