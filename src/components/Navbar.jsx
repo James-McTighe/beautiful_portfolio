@@ -30,9 +30,6 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               {" "}
               Home {" "}
             </a>
-          </div>
-
-          <div className="hidden md:flex items-center space-x-8">
             <a
               href='#about'
               className="tex-gray-300 hove:text-white transition-colors"
@@ -40,9 +37,6 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               {" "}
               About {" "}
             </a>
-          </div>
-
-          <div className="hidden md:flex items-center space-x-8">
             <a
               href='#projects'
               className="tex-gray-300 hove:text-white transition-colors"
@@ -50,9 +44,6 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               {" "}
               Projects {" "}
             </a>
-          </div>
-
-          <div className="hidden md:flex items-center space-x-8">
             <a
               href='#contact'
               className="tex-gray-300 hove:text-white transition-colors"

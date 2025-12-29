@@ -21,61 +21,46 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
         &times;
       </button>
 
-      <a>
-
-        <a href="#home" className='font-mono text-xl font-bold text-white'>
-          {" "}
-          github.com/<span className="text-blue-500">james-mctighe</span>{" "}
-        </a>
-
-        <div
-          className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
-          onClick={() => setMenuOpen((prev) => !prev)}
-        >
-          &#9776;
-        </div>
-
-        <div className="hidden md:flex items-center space-x-8">
-          <a
-            href='#home'
-            className="tex-gray-300 hove:text-white transition-colors"
-          >
-            {" "}
-            Home {" "}
-          </a>
-        </div>
-
-        <div className="hidden md:flex items-center space-x-8">
-          <a
-            href='#about'
-            className="tex-gray-300 hove:text-white transition-colors"
-          >
-            {" "}
-            About {" "}
-          </a>
-        </div>
-
-        <div className="hidden md:flex items-center space-x-8">
-          <a
-            href='#projects'
-            className="tex-gray-300 hove:text-white transition-colors"
-          >
-            {" "}
-            Projects {" "}
-          </a>
-        </div>
-
-        <div className="hidden md:flex items-center space-x-8">
-          <a
-            href='#contact'
-            className="tex-gray-300 hove:text-white transition-colors"
-          >
-            {" "}
-            Contact {" "}
-          </a>
-        </div>
+      <a
+        onClick={() => setMenuOpen(false)}
+        href='#home'
+        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+                      ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
+          `}
+      >
+        {" "}
+        Home {" "}
       </a>
-
+      <a
+        onClick={() => setMenuOpen(false)}
+        href='#about'
+        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+                      ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
+          `}
+      >
+        {" "}
+        About {" "}
+      </a>
+      <a
+        onClick={() => setMenuOpen(false)}
+        href='#projects'
+        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+                      ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
+          `}
+      >
+        {" "}
+        Projects {" "}
+      </a>
+      <a
+        onClick={() => setMenuOpen(false)}
+        href='#contact'
+        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+                      ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
+          `}
+      >
+        {" "}
+        Contact {" "}
+      </a>
     </div>
   );
 };
