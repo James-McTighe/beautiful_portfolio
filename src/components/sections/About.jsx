@@ -126,32 +126,33 @@ export const About = () => {
             <h3 className="text-xl font-bold mb-4">Work Experience</h3>
             <div className="space-y-4 text-gray-300">
 
-              <div>
+              <div className="p-3 rounded-xl border border-transparent hover:border-blue-500 hover:shadow-[0_2px_8px_rgba(59,130,246, 0.1)] transition-all">
                 <h4 className="font-bold">Software Engineering Intern</h4>
                 <h4>OPENLANE November 2025 - Current</h4>
                 <p className="ml-4">Developed and Maintined React-Next.js applications for vehicle wholesale</p>
               </div>
 
-              <div>
+              <div className="p-3 rounded-xl border border-transparent hover:border-blue-500 hover:shadow-[0_2px_8px_rgba(59,130,246, 0.1)] transition-all">
                 <h4 className="font-bold">QC Analyst</h4>
                 <h4>Orano Med</h4>
                 <p className="ml-4">Implemented programs using HIT idenficiation to filter probable API candidates for Radio-Ligand Therapies</p>
               </div>
 
-              <div>
+              <div className="p-3 rounded-xl border border-transparent hover:border-blue-500 hover:shadow-[0_2px_8px_rgba(59,130,246, 0.1)] transition-all">
                 <h4 className="font-bold">Senior Chemist</h4>
                 <h4>Cardinal Health</h4>
                 <p className="ml-4">Created Flask website for tracking and catelogging equipment / inventory.</p>
               </div>
 
-              <div>
+              <div className="p-3 rounded-xl border border-transparent hover:border-blue-500 hover:shadow-[0_2px_8px_rgba(59,130,246, 0.1)] transition-all">
                 <h4 className="font-bold">Data Analyst</h4>
                 <h4>Emergent BioSolutions</h4>
                 <p className="ml-4">Developed scripts to extract document data using ETL methods to create company LIMS system</p>
               </div>
 
-              <div>
+              <div className="p-3 rounded-xl border border-transparent hover:border-blue-500 hover:shadow-[0_2px_8px_rgba(59,130,246, 0.1)] transition-all">
                 <h4 className="font-bold">Analytical Chemist</h4>
+                <h4>Midwest Compliance Laboratories</h4>
                 <p className="ml-4">Performed laboratory experiments to determine finished pharmaceutical content and purity</p>
               </div>
             </div>
