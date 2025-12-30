@@ -1,4 +1,4 @@
-
+import { RevealOnScroll } from "../RevealOnScroll"
 
 export const Projects = () => {
   return (
@@ -6,153 +6,171 @@ export const Projects = () => {
       id="projects"
       className="min-h-screen flex items-center justify-center py-20"
     >
-      <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 
+      <RevealOnScroll>
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 
           to-cyan-400 bg-clip-text text-transparent text-center"
-        >
-          {" "}
-          Featured Projects
-        </h2>
-        <div className="grid grid-cols-1 grid-cols-2 gap-6">
-
-          {/* Project 1 */}
-          <div
-            className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
-            hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246, 0.1)] transition"
           >
-            <h3 className="text-xl font-bold mb-2">Project 1</h3>
-            <p className="text-gray-400 mb-2">
-              lorem impsum dollar
-            </p>
-            <div>
-              {["React", "Node.js", "AWS", "Docker"].map((tech, key) => (
-                <span
-                  className="bg-blue-500/10 text-blue-500 py-1 px-3
+            {" "}
+            Featured Projects
+          </h2>
+          <div className="grid grid-cols-1 grid-cols-2 gap-6">
+
+            {/* Project 1 */}
+            <div
+              className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
+            hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246, 0.1)] transition"
+            >
+              <h3 className="text-xl font-bold mb-2">Project 1</h3>
+              <p className="text-gray-400 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                wdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              </p>
+              <div>
+                {["React", "Node.js", "AWS", "Docker"].map((tech, key) => (
+                  <span
+                    className="bg-blue-500/10 text-blue-500 py-1 px-3
                   rounded-full text-sm hover:bg-blue-500/20 
                   hover:shadow-[0_2px_8px_rgba(59,130,246, 0.2)] transition"
-                  key={key}
+                    key={key}
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex justify-between items-center">
+                <a
+                  href="#"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
-                  {tech}
-                </span>
-              ))}
+                  {" "}
+                  View Project →{" "}
+                </a>
+              </div>
+
             </div>
 
-            <div className="flex justify-between items-center">
-              <a
-                href="#"
-                className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-              >
-                {" "}
-                View Project →{" "}
-              </a>
+            {/* Project 2 */}
+            <div
+              className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
+            hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246, 0.1)] transition"
+            >
+              <h3 className="text-xl font-bold mb-2">Project 2</h3>
+              <p className="text-gray-400 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                wdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              </p>
+              <div>
+                {["React", "Node.js", "AWS", "Docker"].map((tech, key) => (
+                  <span
+                    className="bg-blue-500/10 text-blue-500 py-1 px-3
+                  rounded-full text-sm hover:bg-blue-500/20 
+                  hover:shadow-[0_2px_8px_rgba(59,130,246, 0.2)] transition"
+                    key={key}
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex justify-between items-center">
+                <a
+                  href="#"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  {" "}
+                  View Project →{" "}
+                </a>
+              </div>
+
+            </div>
+
+            {/* Project 3 */}
+            <div
+              className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
+            hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246, 0.1)] transition"
+            >
+              <h3 className="text-xl font-bold mb-2">Project 3</h3>
+              <p className="text-gray-400 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                wdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              </p>
+              <div>
+                {["React", "Node.js", "AWS", "Docker"].map((tech, key) => (
+                  <span
+                    className="bg-blue-500/10 text-blue-500 py-1 px-3
+                  rounded-full text-sm hover:bg-blue-500/20 
+                  hover:shadow-[0_2px_8px_rgba(59,130,246, 0.2)] transition"
+                    key={key}
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex justify-between items-center">
+                <a
+                  href="#"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  {" "}
+                  View Project →{" "}
+                </a>
+              </div>
+
+            </div>
+
+            {/* Project 4 */}
+            <div
+              className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
+            hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246, 0.1)] transition"
+            >
+              <h3 className="text-xl font-bold mb-2">Project 4</h3>
+              <p className="text-gray-400 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                wdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              </p>
+              <div>
+                {["React", "Node.js", "AWS", "Docker"].map((tech, key) => (
+                  <span
+                    className="bg-blue-500/10 text-blue-500 py-1 px-3
+                  rounded-full text-sm hover:bg-blue-500/20 
+                  hover:shadow-[0_2px_8px_rgba(59,130,246, 0.2)] transition"
+                    key={key}
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex justify-between items-center">
+                <a
+                  href="#"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  {" "}
+                  View Project →{" "}
+                </a>
+              </div>
+
             </div>
 
           </div>
-
-          {/* Project 2 */}
-          <div
-            className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
-            hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246, 0.1)] transition"
-          >
-            <h3 className="text-xl font-bold mb-2">Project 2</h3>
-            <p className="text-gray-400 mb-2">
-              lorem impsum dollar
-            </p>
-            <div>
-              {["React", "Node.js", "AWS", "Docker"].map((tech, key) => (
-                <span
-                  className="bg-blue-500/10 text-blue-500 py-1 px-3
-                  rounded-full text-sm hover:bg-blue-500/20 
-                  hover:shadow-[0_2px_8px_rgba(59,130,246, 0.2)] transition"
-                  key={key}
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-
-            <div className="flex justify-between items-center">
-              <a
-                href="#"
-                className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-              >
-                {" "}
-                View Project →{" "}
-              </a>
-            </div>
-
-          </div>
-
-          {/* Project 3 */}
-          <div
-            className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
-            hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246, 0.1)] transition"
-          >
-            <h3 className="text-xl font-bold mb-2">Project 3</h3>
-            <p className="text-gray-400 mb-2">
-              lorem impsum dollar
-            </p>
-            <div>
-              {["React", "Node.js", "AWS", "Docker"].map((tech, key) => (
-                <span
-                  className="bg-blue-500/10 text-blue-500 py-1 px-3
-                  rounded-full text-sm hover:bg-blue-500/20 
-                  hover:shadow-[0_2px_8px_rgba(59,130,246, 0.2)] transition"
-                  key={key}
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-
-            <div className="flex justify-between items-center">
-              <a
-                href="#"
-                className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-              >
-                {" "}
-                View Project →{" "}
-              </a>
-            </div>
-
-          </div>
-
-          {/* Project 4 */}
-          <div
-            className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
-            hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246, 0.1)] transition"
-          >
-            <h3 className="text-xl font-bold mb-2">Project 4</h3>
-            <p className="text-gray-400 mb-2">
-              lorem impsum dollar
-            </p>
-            <div>
-              {["React", "Node.js", "AWS", "Docker"].map((tech, key) => (
-                <span
-                  className="bg-blue-500/10 text-blue-500 py-1 px-3
-                  rounded-full text-sm hover:bg-blue-500/20 
-                  hover:shadow-[0_2px_8px_rgba(59,130,246, 0.2)] transition"
-                  key={key}
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-
-            <div className="flex justify-between items-center">
-              <a
-                href="#"
-                className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-              >
-                {" "}
-                View Project →{" "}
-              </a>
-            </div>
-
-          </div>
-
         </div>
-      </div>
+      </RevealOnScroll>
     </section>
   )
 }
