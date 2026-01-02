@@ -21,16 +21,13 @@ export const Projects = () => {
               className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
             hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246, 0.1)] transition"
             >
-              <h3 className="text-xl font-bold mb-2">Project 1</h3>
-              <p className="text-gray-400 mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                wdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-              </p>
+              <h3 className="text-xl font-bold mb-2">Calculation of Vibrational Frequencies of Molcules using CND0/2</h3>
+              <p className="text-gray-400 mb-2">Created a C++ program which analyzes Molcules
+                based on their initial geometries, these positions were optimized to provide a gradient of near zero.
+                The molecules are then passed into a model
+                using STO-3G basis sets to calculate vibrational modes and frequencies.</p>
               <div>
-                {["React", "Node.js", "AWS", "Docker"].map((tech, key) => (
+                {["C++", "CMake", "Armadillo", "Docker", "Matplotlib"].map((tech, key) => (
                   <span
                     className="bg-blue-500/10 text-blue-500 py-1 px-3
                   rounded-full text-sm hover:bg-blue-500/20 
@@ -44,7 +41,7 @@ export const Projects = () => {
 
               <div className="flex justify-between items-center">
                 <a
-                  href="#"
+                  href="https://github.com/James-McTighe/chem_279_final_project"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   {" "}
@@ -59,16 +56,16 @@ export const Projects = () => {
               className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
             hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246, 0.1)] transition"
             >
-              <h3 className="text-xl font-bold mb-2">Project 2</h3>
+              <h3 className="text-xl font-bold mb-2">ML analysis of viral RNA</h3>
               <p className="text-gray-400 mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                wdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-              </p>
+                Developed a tensorflow model for analysis of Viral RNA sequences.
+                RNA sequences were initially classified based on host ID with an accuracy of up to 97%.
+                After classification, the sequences which did not infect humans were passed through an autoencoder
+                which determined which regions were most significant for classification.
+                Random mutations were introduced into this key reigion and the molecule was re-classified.
+                If this classification changed, this sequence was flagged as being likely to become infectious to humans.</p>
               <div>
-                {["React", "Node.js", "AWS", "Docker"].map((tech, key) => (
+                {["Tensorflow", "Pandas", "Numpy", "BioPython", "Seaborn"].map((tech, key) => (
                   <span
                     className="bg-blue-500/10 text-blue-500 py-1 px-3
                   rounded-full text-sm hover:bg-blue-500/20 
@@ -97,16 +94,12 @@ export const Projects = () => {
               className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
             hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246, 0.1)] transition"
             >
-              <h3 className="text-xl font-bold mb-2">Project 3</h3>
+              <h3 className="text-xl font-bold mb-2">Disaster Image Computer Vision</h3>
               <p className="text-gray-400 mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                wdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                Created a regression model which classified satellite images based on type and severity.
               </p>
               <div>
-                {["React", "Node.js", "AWS", "Docker"].map((tech, key) => (
+                {["SK-Learn", "Pandas", "Numpy", "Seaborn"].map((tech, key) => (
                   <span
                     className="bg-blue-500/10 text-blue-500 py-1 px-3
                   rounded-full text-sm hover:bg-blue-500/20 
@@ -135,16 +128,10 @@ export const Projects = () => {
               className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
             hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246, 0.1)] transition"
             >
-              <h3 className="text-xl font-bold mb-2">Project 4</h3>
-              <p className="text-gray-400 mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                wdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-              </p>
+              <h3 className="text-xl font-bold mb-2">Inventory Management App</h3>
+              <p className="text-gray-400 mb-2">Created a flask based application for tracking site inventory.</p>
               <div>
-                {["React", "Node.js", "AWS", "Docker"].map((tech, key) => (
+                {["Flask", "Python", "SQLAlchemy", "Jinja Templates"].map((tech, key) => (
                   <span
                     className="bg-blue-500/10 text-blue-500 py-1 px-3
                   rounded-full text-sm hover:bg-blue-500/20 
