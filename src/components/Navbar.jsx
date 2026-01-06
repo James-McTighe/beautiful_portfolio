@@ -12,7 +12,12 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
         <div className="flex justify-between items-center h-16">
           <a href="https://github.com/james-mctighe" className='font-mono text-xl font-bold text-white'>
             {" "}
-            github.com/<span className="text-blue-500">james-mctighe</span>{" "}
+            github.com/<span className="relative transition-colors duration-300 
+              after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 
+              after:bg-gradient-to-r after:from-blue-500 after:to-purple-500 after:transition-all 
+              after:duration-300 hover:after:w-full">
+              james-mctighe
+            </span>{" "}
           </a>
 
           <div
@@ -25,28 +30,28 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           <div className="hidden md:flex items-center space-x-8">
             <a
               href='#home'
-              className="tex-gray-300 hove:text-white transition-colors"
+              className="navbar-element"
             >
               {" "}
               Home {" "}
             </a>
             <a
               href='#about'
-              className="tex-gray-300 hove:text-white transition-colors"
+              className="navbar-element"
             >
               {" "}
               About {" "}
             </a>
             <a
               href='#projects'
-              className="tex-gray-300 hove:text-white transition-colors"
+              className="navbar-element"
             >
               {" "}
               Projects {" "}
             </a>
             <a
               href='#contact'
-              className="tex-gray-300 hove:text-white transition-colors"
+              className="navbar-element"
             >
               {" "}
               Contact {" "}
