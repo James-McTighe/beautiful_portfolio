@@ -10,14 +10,10 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10, 0.8)] backdrop-blue-lg border-b border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <a href="https://github.com/james-mctighe" className='font-mono text-xl font-bold text-white'>
+          <a href="https://github.com/james-mctighe"
+            className='text-blue-400 font-mono text-xl font-bold underline-effect'>
             {" "}
-            github.com/<span className="relative transition-colors duration-300 
-              after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 
-              after:bg-gradient-to-r after:from-blue-500 after:to-purple-500 after:transition-all 
-              after:duration-300 hover:after:w-full">
-              james-mctighe
-            </span>{" "}
+            github.com/james-mctighe{" "}
           </a>
 
           <div
